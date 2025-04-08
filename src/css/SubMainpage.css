@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+ul, li, ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.SubMainwarp{
+  width: 100vw;       
+  height: 100vh;
+  background-color: #cccccc30;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;    
+} 
+
+.boxss{
+    width: 704px;
+    height: 368px;
+    border-radius: 27px;
+    background-color: #d8d4e3c9;
+    display: flex;
+    justify-content: center;
+}
+
+.Carcheck {
+    width: 278px;
+    height: 269px;
+    border: 3px solid #2be231d1;
+    margin: 43px 31px 13px -9px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;       /* 세로 정렬 */
+    justify-content: center;      /* 세로축 중앙 */
+    align-items: center;          /* 가로축 중앙 */
+}
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 125px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+}
+
+.Carchecktext {
+    font-size: 22px;
+    margin: 0;
+    margin-top: 21px;
+}
+
+
+.test{
+    width: 278px;
+    height: 269px;
+    border: 3px solid #db6bd25c;
+    margin: 43px 0 ;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;       /* 세로 정렬 */
+    justify-content: center;      /* 세로축 중앙 */
+    align-items: center;          /* 가로축 중앙 */
+}

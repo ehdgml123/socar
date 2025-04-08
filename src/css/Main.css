@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+ul, li, ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.Mainwrap{
+    width: 100vw;       
+    height: 100vh;      
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center; /* 가로 중앙 */
+    align-items: center;     /* 세로 중앙 */
+    background-image: url("../image/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+}
+
+
+.Maintextbox{
+    width: 625px;
+    height: 251px;
+    border:  3px solid white;
+    border-left: none;
+    border-right: none;
+}
+
+
+.toptext{
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    font-size: 46px;
+}
+
+.bottext{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.Mainbuttonbox{
+    width: 252px;
+    height: 100px;
+    margin-top: 28px;
+}
+
+.frame {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+  }
+  .custom {
+    margin: 20px;
+    outline: none;
+  }
+  .custom {
+    width: 150px;
+    height: 43px;
+    padding: 10px 25px;
+    border: 2px solid white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 18px;
+  }
+  
+  .btn-1 {
+    transition: all 0.3s ease;
+  }
+  .btn-1:hover {
+     box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001;
+  }
+  
+
+  .Mainfooter{
+    width: 464px;
+    height: 31px;
+    margin-top: 21px;
+  }
+
+  .text-A{
+     color: white;
+     font-size: 16px;
+     text-align: center;
+  }
