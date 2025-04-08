@@ -41,7 +41,7 @@ const Join = () => {
       const checkEmailExists = async(email) => {
          
         try{
-          const res = await(`/api/check-email?email=${email}`);
+          const res = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/auth/check-email?email=${email}`);
           const data = await res.json();
           return data.exists;
         }catch(err){
@@ -75,19 +75,19 @@ const Join = () => {
     
       
         try {
-          const res = await fetch("/api/register", {
+          const res = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/auth/register`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
               email: form.email,
-              name: form.name,
+              username: form.name,
               password: form.password,
             }),
           });
     
           if (res.ok) {
             alert("회원가입 성공!");
-            navigate("SubMainpage"); 
+            navigate("/SubMainpage"); 
           } else {
             const data = await res.json();
             alert(data.message || "회원가입 실패");

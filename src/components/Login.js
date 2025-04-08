@@ -27,20 +27,26 @@ const Login = () => {
     e.preventDefault();
 
     if (!form.username || !form.password) {
-      alert("아이디와 비밀번호를 입력해주세요.");
+      alert("이메일과 비밀번호를 입력해주세요.");
       return;
     }
 
     try{
-      const res = await fetch("/api/login",{
+      const formData = new FormData();
+      formData.append('username', form.username);
+      formData.append('password', form.password);
+
+      const res = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/auth/login`,{
          method: "POST",
-         headers:{
-          "Content-Type": "application/json",
-         },
-         body : JSON.stringify(form),
+         body : formData,
       });
 
       if(res.ok){
+        const data = await res.json();
+        console.log("Access Token:", data.access_token);
+        console.log("Token Type:", data.token_type);
+        
+        localStorage.setItem('token', data.access_token);
         alert("로그인 성공!");
         navigate("/SubMainpage");
       }else{
@@ -64,7 +70,7 @@ const Login = () => {
             <form onSubmit={handleLogin}>
               <div className="user-box">
                 <input type="text" name="username" required value={form.username} onChange={handleChange} />
-                <label>Username</label>
+                <label>Email</label>
               </div>
               <div className="user-box">
                 <input type="password" name="password" required value={form.password} onChange={handleChange} />

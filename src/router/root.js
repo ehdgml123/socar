@@ -1,5 +1,6 @@
 import { lazy, Suspense } from "react";
 import { createBrowserRouter } from "react-router-dom";
+import Test from "../components/Test";
 
 const Loading = <div>로딩중...</div>;
 
@@ -40,6 +41,10 @@ const root = createBrowserRouter([
   {
     path : "/Login",
     element : <Suspense fallback={Loading}><Login /></Suspense>
+  },
+  {
+    path : "/test",
+    element : <Suspense fallback={Loading}><Test /></Suspense>
   }
 ]);
 
