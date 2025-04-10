@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+ul, li, ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modal-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 524px;
+    height: 645px;
+    max-height: 80vh; 
+    overflow-y: auto; 
+  }
+  
+
+  .frontfile{
+    width: 100%;
+    height: 315px;
+    margin-top: 46px;
+  }
+
+  .fronttextbox{
+    width: 100%;
+    height: 35px;
+  }
+
+  .fronttext{
+    font-size: 19px;
+    font-weight: 500;
+  }
+
+  .frontuploadbox{
+    width: 100%;
+    height: 277px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .car-image {
+    width: 187px;
+    height: 180px;
+    opacity: 0.5;
+    margin-top: 41px;
+    margin-left: 29px;
+  }
+
+
+  .upload-icon {
+    position: relative;
+    top: 44%;
+    left: -18.1%;
+    transform: translate(-50%, -50%);
+    background-color: #2e3a59;
+    color: white;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 28px;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+  }
+
+  .upload-icon > .material-symbols-outlined {
+    position: relative;
+    top: 1px;
+    left: 2px;
+}
+
+
+.sidefile{
+    width: 100%;
+    height: 315px;
+}
+
+.sideuploadbox{
+    width: 100%;
+    height: 277px;
+    display: flex;
+    justify-content: center;
+}
+
+.carside-image{
+    width: 230px;
+    height: 213px;
+    opacity: 0.5;
+    margin-top: 30px;
+    margin-left: 36px;
+}
+
+.sideuploadbox > .upload-icon{
+    position: relative;
+    top: 47%;
+    left: -24.1%;
+}
+
+
+
+.siderigfile{
+    width: 100%;
+    height: 315px;
+}
+
+.carsiderig-image{
+    width: 230px;
+    height: 213px;
+    opacity: 0.5;
+    margin-top: 30px;
+    margin-left: 36px;
+}
+
+.carbackfile{
+    width: 100%;
+    height: 315px;
+}
+
+.carbackuploadbox{
+    width: 100%;
+    height: 277px;
+    display: flex;
+    justify-content: center;
+}
+
+.carback-image{
+    width: 187px;
+    height: 180px;
+    opacity: 0.5;
+    margin-top: 41px;
+    margin-left: 29px;
+}
+
+.Modelmaintextbox{
+    width: 100%;
+    height: 20px;
+}
+
+.Modelmaintext{
+    font-size: 28px;
+    font-weight: 700;
+
+    color: #0000008c;
+}
+
+
+.complete-button {
+    width: 100%;
+    height: 50px;
+    background-color: #00c6ff;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .modelclosebox{
+    width: 100%;
+    height: 40px;
+  }
+
+  .modelClose{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }

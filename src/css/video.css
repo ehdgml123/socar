@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+ul, li, ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.vidmodal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+
+  .vidmodelclosebox{
+    width: 100%;
+    height: 40px;
+  }
+
+  .vidmodelClose{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .vidmodal-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 524px;
+    height: 499px;
+  }
+
+  .vidModelmaintextbox{
+    width: 100%;
+    height: 20px;
+}
+
+.vidModelmaintext{
+    font-size: 28px;
+    font-weight: 700;
+    color: #0000008c;
+}
+
+.videouplodbox{
+    width: 100%;
+    height: 311px;
+    margin-top: 29px;
+    align-items: center;     /* 세로 중앙 */
+    display: flex;
+    justify-content: center;
+}
+
+  
+ .vidupload{
+    width: 159px;
+    height: 143px;
+ }
+
+ .upload-label-text {
+    font-size: 19px;
+    color: #666;
+  }
+
+
+  .complete-button-A {
+    width: 100%;
+    height: 50px;
+    background-color: #00c6ff;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 25px;
+  }

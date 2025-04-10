@@ -10,15 +10,15 @@ const SubMainpage = () => {
         <Header />
         <div className='SubMainwarp'>
             <div className='boxss'>
-            <Link to="/damage-check" className="CarcheckLink">  
+            <Link to="/carcheck" className="CarcheckLink">  
                  <li className='Carcheck'>
-                    <span className="material-symbols-outlined">no_crash</span>
+                    <span className="material-symbols-outlined" style={{fontSize:'125px'}}>no_crash</span>
                     <p className='Carchecktext'>확인하기</p>
                   </li>
             </Link>      
             <Link to="">
                  <li className='test'>
-                   <span className="material-symbols-outlined">event_note</span>
+                   <span className="material-symbols-outlined" style={{fontSize:'125px'}}>event_note</span>
                    <p className='Carchecktext'>확인하기</p>
                 </li>         
             </Link>   

@@ -16,6 +16,8 @@ const Join = lazy(() => import('../components/Join'))
 
 const Login = lazy(() => import('../components/Login'))
 
+const Carcheck = lazy(() => import('../components/Carcheck'))
+
 
 const root = createBrowserRouter([
   {
@@ -45,6 +47,10 @@ const root = createBrowserRouter([
   {
     path : "/test",
     element : <Suspense fallback={Loading}><Test /></Suspense>
+  },
+  {
+    path : "/carcheck",
+    element : <Suspense fallback={Loading}><Carcheck /></Suspense>
   }
 ]);
 
