@@ -18,6 +18,9 @@ const Login = lazy(() => import('../components/Login'))
 
 const Carcheck = lazy(() => import('../components/Carcheck'))
 
+const InquiryCreate = lazy(() => import('../components/InquiryCreate'))
+
+
 
 const root = createBrowserRouter([
   {
@@ -51,6 +54,10 @@ const root = createBrowserRouter([
   {
     path : "/carcheck",
     element : <Suspense fallback={Loading}><Carcheck /></Suspense>
+  },
+  {
+    path : "/inquiryCreate",
+    element : <Suspense fallback={Loading}><InquiryCreate /></Suspense>
   }
 ]);
 

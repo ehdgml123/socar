@@ -1,69 +1,67 @@
-import '../css/inquiry.css'
-import Header from './Header';
+import { Link } from "react-router-dom";
+import "../css/inquiry.css";
+import Header from "./Header";
 
 const Inquiry = () => {
-
-    return (
-      <>
-        <Header />
-        <div className="inquirywrap">
-           <div className='maintextbox'>
-               <h1 className='maintext'>
-                  문의 하기
-               </h1>
-           </div>
-          <div className="inquirybox">
-            <form className="form_area">
-              <ul>
-                <li>
-                  <input
-                    type="text"
-                    name="wr_name"
-                    className="sh_input"
-                    required
-                  />
-                  <label>이름</label>
-                </li>
-                <li>
-                  <input
-                    type="text"
-                    name="sh_phone"
-                    className="sh_input"
-                    pattern="\d*"
-                    maxLength="20"
-                    required
-                  />
-                  <label>이메일</label>
-                </li>
-                <li>
-                  <textarea name="wr_content" className="sh_input" />
-                  <label>문의내용</label>
-                </li>
-              </ul>
-
-              <div className="prv_area">
-                <a
-                  href="#!"
-                  onClick={() =>
-                    window.open(
-                      "",
-                      "popup",
-                      "width=600,height=800,left=150,top=0"
-                    )
-                  }
-                >
-                  개인정보취급방침
-                </a>
-                <label htmlFor="prv_check">동의</label>
-                <input type="checkbox" id="prv_check" className="ck_box" />
-              </div>
-
-              <input type="submit" value="상담 신청하기" className="send" />
-            </form>
-          </div>
+  return (
+    <>
+      <Header />
+      <div className="inquirywrap">
+        <div className="maintextbox">
+          <h1 className="maintext">문의 게시판</h1>
         </div>
-      </>
-    );
-}
+        <div className="inquirybox">
+          <table>
+            <thead>
+              <tr>
+                <th style={{ width: "124px" }}>번호</th>
+                <th style={{ width: "52%" }}>제목</th>
+                <th style={{ width: "209px" }}>글쓴이</th>
+                <th>작성시간</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>James</td>
+                <td>Matman</td>
+                <td>(713) 123-8965</td>
+                <td>
+                  <a href="mailto:jmatman@stewart.com">jmatman@stewart.com</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Johnny</td>
+                <td>Smith</td>
+                <td>(713) 584-9614</td>
+                <td>
+                  <a href="mailto:jsmith@stewart.com">jsmith@stewart.com</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Susan</td>
+                <td>Johnson</td>
+                <td>(713) 847-1124</td>
+                <td>
+                  <a href="mailto:sjohnson@stewart.com">sjohnson@stewart.com</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Tracy</td>
+                <td>Richardson</td>
+                <td>(713) 245-4821</td>
+                <td>
+                  <a href="mailto:trichard@stewart.com">trichard@stewart.com</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <Link to="/inquiryCreate" className="Picton_2">
+            문의 하기
+          </Link>
+        </div>
+      </div>
+    </>
+  );
+};
 
 export default Inquiry;

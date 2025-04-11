@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.inquiryCreatewrap {
+  width: 100vw;
+  height: 100vh;
+  background-color: #cccccc30;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inquiryCreatBoxs {
+  width: 739px;
+  height: 525px;
+  background-color: white;
+  border-radius: 36px;
+  border: 2px solid #73685d;
+  margin-top: 176px;
+}
+
+.inquiryCreattext{
+    text-align: center;
+    margin-top: 21px;
+}
+
+/* input 시작*/
+.form_area {
+    max-width: 584px;
+    padding: 45px;
+    font-family: "pretendard";
+  }
+  
+  .form_area ul li {
+    position: relative;
+  }
+  .form_area ul li + li {
+    margin-top: 25px;
+  }
+  
+  .form_area .sh_input {
+    width: 100%;
+    height: 54px;
+    padding-left: 71px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: transparent;
+    font-size: 15px;
+    color: black;
+    font-family: "pretendard";
+    transition: all 0.3s ease;
+    outline: none; 
+  }
+  
+  .form_area .sh_input:focus {
+    border-bottom: 1px solid black;
+  }
+  
+
+  .form_area ul li textarea.sh_input {
+    height: 90px;
+    padding-top: 18px;
+    line-height: 1.4;
+  }
+  
+
+  .form_area ul li label {
+    position: absolute;
+    left: 0;
+    top: 17px;
+    font-size: 15px;
+    color: #000;
+  }
+  
+
+  
+  .form_area .send {
+    width: 44%;
+    height: 70px;
+    margin-top: 20px;
+    margin-left: 190px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #111;
+    background: #fff;
+    border-radius: 14px;
+    border: 2px solid #73685d;
+    cursor: pointer;
+  }
+  
+
+/* input 끝*/
+
+
+.inquiryCreButtonBoxs{
+    width: 100%;
+    height: 74px;
+    margin-top: 21px;
+    display: flex;
+    justify-content: center;
+}
+
+.Picton_2-A {
+    display: inline-block;
+    font-family: segoe UI;
+    font-size: 17px;
+    outline: none;
+    font-weight: bold;
+  }
+
+  .Picton_2-A {
+    border: 4px solid #73685d;
+    color: black;
+    margin-top: 14px;
+    border-radius: 18px;
+    text-align: center;
+    width: 186px;
+    height: 51px;
+    line-height: 51px;
+    margin-left: -9px;
+  }
+  .Picton_2-A:hover {
+    background: #73685d;
+    color: #fff;
+  }
+  .Picton_2-A:active {
+    background: #59abe3;
+    border-color: #fff;
+  }

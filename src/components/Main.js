@@ -8,10 +8,7 @@ const Main = () => {
      <div className="Mainwrap">
         <div className="Maintextbox">
             <p className="toptext">
-                아직 
-            </p>
-            <p className="bottext">
-                하단 글씨
+                차량 시스템 체계
             </p>
         </div>
         <div className="Mainbuttonbox">
