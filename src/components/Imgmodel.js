@@ -18,10 +18,13 @@ const Imgmodel = ({onClose, setUploadedImages}) => {
       siderig: null,
       back: null
     });
+    const [sendImages, setSendIagems] = useState({})
 
     const handleFileChange = (e) => {
       const file = e.target.files[0];
       const type = e.target.dataset.type;
+
+      setSendIagems({...sendImages, [type]: file})
     
       if (file) {
         console.log("업로드 된 이미지:", file);
@@ -36,9 +39,9 @@ const Imgmodel = ({onClose, setUploadedImages}) => {
           // 스크롤 이동
           if (type === 'front' && sideRef.current) {
             sideRef.current.scrollIntoView({ behavior: 'smooth' });
-          } else if (type === 'carside' && sideRigRef.current) {
+          } else if (type === 'leftSide' && sideRigRef.current) {
             sideRigRef.current.scrollIntoView({ behavior: 'smooth' });
-          } else if (type === 'carsiderig' && backRef.current) {
+          } else if (type === 'rightSide' && backRef.current) {
             backRef.current.scrollIntoView({ behavior: 'smooth' });
           }
         };
@@ -46,8 +49,50 @@ const Imgmodel = ({onClose, setUploadedImages}) => {
       }
     };
 
+    const handleUpload = async () => {
+      console.log(sendImages)
+      try {
+          const formData = new FormData();
+          
+          // 각 이미지 추가
+          if (sendImages.front) {
+              formData.append('front', sendImages.front);
+          }
+          if (sendImages.leftSide) {
+              formData.append('leftSide', sendImages.leftSide);
+          }
+          if (sendImages.rightSide) {
+              formData.append('rightSide', sendImages.rightSide);
+          }
+          if (sendImages.back) {
+              formData.append('back', sendImages.back);
+          }
+  
+          const token = localStorage.getItem('token');
+          const res = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/upload/images`, {
+              method: 'POST',
+              headers: {
+                  'Authorization': `Bearer ${token}`
+              },
+              body: formData
+          });
+  
+          if (res.ok) {
+              const data = await res.json();
+              console.log('업로드된 파일 정보:', data.uploaded_files);
+          } else {
+              const error = await res.json();
+              alert(error.detail || '업로드 실패');
+          }
+      } catch (error) {
+          console.error('업로드 오류:', error);
+          alert('업로드 중 오류가 발생했습니다.');
+      }
+    };
+
     const handleApply = () => {
       setUploadedImages(localImages); // 부모에게 전달
+      handleUpload();
       onClose();                      // 모달 닫기
     };
 
@@ -89,7 +134,7 @@ const Imgmodel = ({onClose, setUploadedImages}) => {
                               type='file' 
                                accept='image/*' 
                                id='car-upload-side' 
-                               data-type="carside" 
+                               data-type="leftSide" 
                                onChange={handleFileChange} 
                                style={{display : "none"}} 
                             />
@@ -103,12 +148,12 @@ const Imgmodel = ({onClose, setUploadedImages}) => {
                           <p className='fronttext'>옆면(우)</p>
                      </div>
                       <div className='sideuploadbox'>
-                          <img src={carSiderig} alt="차량 옆(좌)" className="carsiderig-image" />
+                          <img src={carSiderig} alt="차량 옆(우)" className="carsiderig-image" />
                            <input 
                               type='file' 
                                accept='image/*' 
                                id='car-upload-siderig' 
-                               data-type="carsiderig" 
+                               data-type="rightSide" 
                                onChange={handleFileChange} 
                                style={{display : "none"}} 
                             />
@@ -122,12 +167,12 @@ const Imgmodel = ({onClose, setUploadedImages}) => {
                           <p className='fronttext'>뒷면</p>
                      </div>
                       <div className='carbackuploadbox'>
-                          <img src={carFront} alt="차량 옆(좌)" className="carback-image" />
+                          <img src={carFront} alt="뒷면" className="carback-image" />
                            <input 
                               type='file' 
                                accept='image/*' 
                                id='car-upload-carback' 
-                               data-type="carback" 
+                               data-type="back" 
                                onChange={handleFileChange} 
                                style={{display : "none"}} 
                             />
