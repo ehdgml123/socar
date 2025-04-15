@@ -20,6 +20,7 @@ const Carcheck = lazy(() => import('../components/Carcheck'))
 
 const InquiryCreate = lazy(() => import('../components/InquiryCreate'))
 
+const InquiryDetail = lazy(() => import("../components/InquiryDetail"));
 
 
 const root = createBrowserRouter([
@@ -58,7 +59,13 @@ const root = createBrowserRouter([
   {
     path : "/inquiryCreate",
     element : <Suspense fallback={Loading}><InquiryCreate /></Suspense>
+  },
+  {
+    path: "/inquiry/:id",
+    element: <Suspense fallback={Loading}><InquiryDetail /></Suspense>
   }
 ]);
 
 export default root;
+
+

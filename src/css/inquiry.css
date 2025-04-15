@@ -132,6 +132,7 @@ a {
     outline: none;
     color: #fff;
     font-weight: bold;
+    cursor: pointer;
   }
 
   .Picton_2 {
@@ -143,7 +144,7 @@ a {
     text-align: center;
     width: 115px;
     height: 35px;
-    line-height: 35px;
+    line-height: 31px;
   }
   .Picton_2:hover {
     background: #73685d;

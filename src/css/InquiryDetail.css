@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.inquiryDetailwrap{
+    width: 100vw;
+    height: 100vh;
+    background-color: #cccccc30;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.inquiryDetailBoxs {
+    width: 739px;
+    height: 525px;
+    background-color: white;
+    border-radius: 36px;
+    border: 2px solid #73685d;
+    margin-top: 176px;
+  }
+
+
+.inquiryDetailtext{
+    text-align: center;
+    margin-top: 21px;
+}
+
+/* input 시작*/
+.form_area {
+    max-width: 584px;
+    padding: 45px;
+    font-family: "pretendard";
+  }
+  
+  .form_area ul li {
+    position: relative;
+  }
+  .form_area ul li + li {
+    margin-top: 25px;
+  }
+  
+  .form_area .sh_input {
+    width: 100%;
+    height: 54px;
+    padding-left: 71px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: transparent;
+    font-size: 15px;
+    color: black;
+    font-family: "pretendard";
+    transition: all 0.3s ease;
+    outline: none; 
+  }
+  
+  .form_area .sh_input:focus {
+    border-bottom: 1px solid black;
+  }
+  
+
+  .form_area ul li textarea.sh_input {
+    height: 90px;
+    padding-top: 18px;
+    line-height: 1.4;
+  }
+  
+
+  .form_area li label {
+    position: relative;
+    left: 0;
+    top: -58px;
+    font-size: 15px;
+    color: #000;
+  }
+  
+  .form_area .send {
+    width: 44%;
+    height: 70px;
+    margin-top: 20px;
+    margin-left: 190px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #111;
+    background: #fff;
+    border-radius: 14px;
+    border: 2px solid #73685d;
+    cursor: pointer;
+  }
+  
+
+/* input 끝*/
+
+.inquiryDetailButtonBoxs{
+    width: 738px;
+    height: 73px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+}
+
+.Picton_2-B {
+    display: inline-block;
+    font-family: segoe UI;
+    font-size: 17px;
+    outline: none;
+    font-weight: bold;
+  }
+
+  .Picton_2-B {
+    border: 4px solid #73685d;
+    color: black;
+    border-radius: 18px;
+    text-align: center;
+    width: 186px;
+    height: 51px;
+    line-height: 51px;
+  }
+  .Picton_2-B:hover {
+    background: #73685d;
+    color: #fff;
+  }
+  .Picton_2-B:active {
+    background: #59abe3;
+    border-color: #fff;
+  }
+
+
+  #Flamingo_2 {
+    background: #fff;
+    color: #ef4836;
+    width: 186px;
+    height: 58px;
+    border: 4px solid #ef4836;
+    border-radius: 18px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  #Flamingo_2:hover {
+    background: #ef4836;
+    border-color: #ef4836;
+    color: #fff;
+  }
+  #Flamingo_2:active {
+    background: #ef4836;
+    border-color: #fff;
+  }
