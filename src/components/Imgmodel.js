@@ -6,7 +6,7 @@ import carSiderig from '../image/sidecarrig.png'
 import close from '../image/cancel.png'
 import { useRef, useState } from 'react';
 
-const Imgmodel = ({onClose, setUploadedImages}) => {
+const Imgmodel = ({onClose, setUploadedImages, onDetectionComplete, setLoading}) => {
 
     const sideRef = useRef(null);   // 좌
     const sideRigRef = useRef(null);  // 우
@@ -52,6 +52,9 @@ const Imgmodel = ({onClose, setUploadedImages}) => {
     const handleUpload = async () => {
       console.log(sendImages)
       try {
+          setLoading(true);
+
+
           const formData = new FormData();
           
           // 각 이미지 추가
@@ -69,7 +72,7 @@ const Imgmodel = ({onClose, setUploadedImages}) => {
           }
   
           const token = localStorage.getItem('token');
-          const res = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/upload/images`, {
+          const res = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/upload/detect`, {
               method: 'POST',
               headers: {
                   'Authorization': `Bearer ${token}`
@@ -79,7 +82,10 @@ const Imgmodel = ({onClose, setUploadedImages}) => {
   
           if (res.ok) {
               const data = await res.json();
-              console.log('업로드된 파일 정보:', data.uploaded_files);
+              console.log('응답 결과:', data);
+
+              onDetectionComplete(data.data);
+              
           } else {
               const error = await res.json();
               alert(error.detail || '업로드 실패');
@@ -87,6 +93,8 @@ const Imgmodel = ({onClose, setUploadedImages}) => {
       } catch (error) {
           console.error('업로드 오류:', error);
           alert('업로드 중 오류가 발생했습니다.');
+      }finally{
+        setLoading(false);
       }
     };
 
@@ -98,8 +106,8 @@ const Imgmodel = ({onClose, setUploadedImages}) => {
 
     return(
         <>
-        <div className="modal-overlay">
-             <div className="modal-box">
+        <div className="modal-overlay" onClick={onClose}>
+             <div className="modal-box" onClick={(e) => e.stopPropagation()}>
                 <div  className='modelclosebox'>
                 <img src={close} alt="닫기버튼" className="modelClose" onClick={onClose}/>
                 </div>
@@ -139,7 +147,7 @@ const Imgmodel = ({onClose, setUploadedImages}) => {
                                style={{display : "none"}} 
                             />
                             <label htmlFor="car-upload-side" className="upload-icon">
-                                <span className="material-symbols-outlined">add_circle</span>
+                                <span className="material-symbols-outlined" style={{position : "relative", top : "1.5px"}}>add_circle</span>
                             </label>
                       </div>
                  </div>
@@ -157,7 +165,7 @@ const Imgmodel = ({onClose, setUploadedImages}) => {
                                onChange={handleFileChange} 
                                style={{display : "none"}} 
                             />
-                            <label htmlFor="car-upload-siderig" className="upload-icon">
+                            <label htmlFor="car-upload-siderig" className="upload-icon" style={{position : "relative", left : "-126px"}}>
                                 <span className="material-symbols-outlined">add_circle</span>
                             </label>
                       </div>

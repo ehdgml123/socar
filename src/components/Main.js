@@ -14,9 +14,6 @@ const Main = () => {
         <div className="Mainbuttonbox">
         <Link className="custom btn-1" to="/SubMainpage">이동</Link>
         </div>
-        <div className="Mainfooter">
-            <p className="text-A">2조 : 내호승, 이동희</p>
-        </div>
      </div>
     </>
  )

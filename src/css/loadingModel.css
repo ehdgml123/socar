@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+
+.loading-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .loading-modal-content {
+    padding: 30px 60px;
+    border-radius: 16px;
+    text-align: center;
+  }
+  
+  .loading-text {
+    margin-top: 16px;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+  }

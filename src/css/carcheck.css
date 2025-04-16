@@ -3,22 +3,6 @@
 
 
 
-html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Noto Sans KR', sans-serif;
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Noto Sans KR', sans-serif;
-}
-
-ul, li, ol{
-    list-style: none;
-}
 
 a{
     text-decoration: none;
@@ -27,7 +11,7 @@ a{
 
 .carcheckwrap{
     width: 100vw;       
-    height: 100vh;
+    height: 108vh;
     background-color: #cccccc30;
 }
 
@@ -55,7 +39,6 @@ a{
 }
 
 .button3{
-   
     padding: 17px 29px 14px 15px;
     min-width: 232px;
     height: 65px;
@@ -69,7 +52,7 @@ a{
     cursor: pointer;
 }
 
-.material-symbols-outlined {
+.button3  >.material-symbols-outlined {
     font-family: 'Material Symbols Outlined';
     font-weight: normal;
     font-style: normal;
@@ -95,10 +78,20 @@ a{
 }
 
 
+.button5  >.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 35px;
+    vertical-align: middle;
+    margin-right: 6px;
+    top: -1px;
+  }
+
 
 .resultboxs{
     width: 100%;
-    height: 595px;
+    height: 885px;
     margin-top: 81px;
     display: flex;
     justify-content: center;
@@ -129,15 +122,19 @@ a{
     justify-content: center;
     align-items: center;
     position: relative;
-    top: -52px;
+    top: 154px;
 }
 
 .breakresult{
-
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    justify-items: center;
+    padding: 20px;
 }
 
 .uploaded-image {
-    width: 155px;
+    width: 333px;
     margin: 16px;
     border-radius: 6px;
     border: 3px solid #ccc;
@@ -149,4 +146,9 @@ a{
     height: auto;
     margin-top: 20px;
     border-radius: 8px;
+  }
+
+  .damage-label > p {
+    margin-left: 18px;
+    font-weight: 700;
   }

@@ -1,21 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
-html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Noto Sans KR', sans-serif;
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Noto Sans KR', sans-serif;
-}
-
-ul, li, ol{
-    list-style: none;
-}
 
 a{
     text-decoration: none;
@@ -80,17 +64,16 @@ a{
 
   .upload-icon {
     position: relative;
-    top: 44%;
-    left: -18.1%;
+    top: 46%;
+    left: -21.1%;
     transform: translate(-50%, -50%);
-    background-color: #2e3a59;
+    background-color: #32416b;
     color: white;
     border-radius: 50%;
     padding: 8px;
     cursor: pointer;
     font-size: 28px;
-    display: flex
-;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 40px;
@@ -98,9 +81,18 @@ a{
   }
 
   .upload-icon > .material-symbols-outlined {
-    position: relative;
-    top: 1px;
-    left: 2px;
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 41px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+
 }
 
 
@@ -124,13 +116,11 @@ a{
     margin-left: 36px;
 }
 
+
 .sideuploadbox > .upload-icon{
-    position: relative;
-    top: 47%;
-    left: -24.1%;
+  position: relative;
+  left: -105px;
 }
-
-
 
 .siderigfile{
     width: 100%;
@@ -144,6 +134,8 @@ a{
     margin-top: 30px;
     margin-left: 36px;
 }
+
+
 
 .carbackfile{
     width: 100%;
@@ -199,4 +191,5 @@ a{
     width: 20px;
     height: 20px;
     cursor: pointer;
+    float: right;
   }
