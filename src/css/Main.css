@@ -63,7 +63,7 @@ a{
     outline: none;
   }
   .custom {
-    width: 150px;
+    width: 201px;
     height: 43px;
     padding: 10px 25px;
     border: 2px solid white;
@@ -78,6 +78,7 @@ a{
     font-size: 25px;
     text-align: center;
     border-radius: 18px;
+    line-height: 19px;
   }
   
   .btn-1 {

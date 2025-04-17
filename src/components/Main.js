@@ -11,9 +11,8 @@ const Main = () => {
                 차량 시스템 체계
             </p>
         </div>
-        <div className="Mainbuttonbox">
-        <Link className="custom btn-1" to="/SubMainpage">이동</Link>
-        </div>
+
+        <Link className="custom btn-1" to="/SubMainpage">페이지 이동</Link>
      </div>
     </>
  )

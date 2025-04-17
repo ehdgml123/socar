@@ -94,6 +94,7 @@ const InquiryDetail = () => {
                 className="sh_input"
                 value={inquiry.wr_content}
                 readOnly
+                style={{height: '82px'}}
               />
               <label>문의내용</label>
             </li>

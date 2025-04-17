@@ -69,7 +69,7 @@ const Inquiry = () => {
                   <tr key={item.id}>
                      <td>{item.id}</td>
                      <td>
-                      <Link to={`/inquiry/${item.id}`}>
+                      <Link to={`/inquiry/${item.id}`} className="inqhover">
                       {item.title}
                       </Link>
                       </td>

@@ -2,6 +2,7 @@ import { lazy, Suspense } from "react";
 import { createBrowserRouter } from "react-router-dom";
 import Test from "../components/Test";
 
+
 const Loading = <div>로딩중...</div>;
 
 const Main = lazy(() => import('../components/Main'))
@@ -20,8 +21,9 @@ const Carcheck = lazy(() => import('../components/Carcheck'))
 
 const InquiryCreate = lazy(() => import('../components/InquiryCreate'))
 
-const InquiryDetail = lazy(() => import("../components/InquiryDetail"));
+const InquiryDetail = lazy(() => import("../components/InquiryDetail"))
 
+const ViewHistoryPage = lazy(() => import("../components/ViewHistoryPage"))
 
 const root = createBrowserRouter([
   {
@@ -63,6 +65,9 @@ const root = createBrowserRouter([
   {
     path: "/inquiry/:id",
     element: <Suspense fallback={Loading}><InquiryDetail /></Suspense>
+  },{
+    path : "/viewhistory",
+    element : <Suspense fallback={Loading}><ViewHistoryPage /></Suspense>
   }
 ]);
 

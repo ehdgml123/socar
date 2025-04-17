@@ -29,6 +29,7 @@ a{
     width: 20px;
     height: 20px;
     cursor: pointer;
+    float: right;
   }
   
   .vidmodal-box {
@@ -36,7 +37,7 @@ a{
     padding: 30px;
     border-radius: 10px;
     width: 524px;
-    height: 499px;
+    height: 569px;
   }
 
   .vidModelmaintextbox{

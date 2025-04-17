@@ -138,3 +138,11 @@ a {
     background: #59abe3;
     border-color: #fff;
   }
+
+
+  /* 호버*/
+
+
+  .inqhover:hover{
+    color: #4D79FF;
+  }

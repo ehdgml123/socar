@@ -34,8 +34,8 @@ a {
 }
 
 /* input 시작*/
-.form_area {
-    max-width: 584px;
+.inquiryDetailBoxs >.form_area {
+    max-width: 729px;
     padding: 45px;
     font-family: "pretendard";
   }

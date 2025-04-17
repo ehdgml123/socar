@@ -13,13 +13,13 @@ const SubMainpage = () => {
             <Link to="/carcheck" className="CarcheckLink">  
                  <li className='Carcheck'>
                     <span className="material-symbols-outlined" style={{fontSize:'125px'}}>no_crash</span>
-                    <p className='Carchecktext'>확인하기</p>
+                    <p className='Carchecktext'>파손 확인하기</p>
                   </li>
             </Link>      
-            <Link to="">
+            <Link to="/viewhistory">
                  <li className='test'>
                    <span className="material-symbols-outlined" style={{fontSize:'125px'}}>event_note</span>
-                   <p className='Carchecktext'>확인하기</p>
+                   <p className='Carchecktext'>파손 조회내역</p>
                 </li>         
             </Link>   
    
