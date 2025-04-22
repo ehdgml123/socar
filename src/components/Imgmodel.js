@@ -71,7 +71,7 @@ const Imgmodel = ({onClose, setUploadedImages, onDetectionComplete, setLoading})
               formData.append('back', sendImages.back);
           }
   
-          const token = localStorage.getItem('token');
+          const token = sessionStorage.getItem('token');
           const res = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/upload/detect`, {
               method: 'POST',
               headers: {
@@ -121,7 +121,7 @@ const Imgmodel = ({onClose, setUploadedImages, onDetectionComplete, setLoading})
                      <div className="frontuploadbox">
                         <img src={carFront} alt="차량 정면" className="car-image" />
                         <input type='file' 
-                          accept='image/*' 
+                           
                           id='car-upload'
                           data-type="front" 
                           onChange={handleFileChange} 

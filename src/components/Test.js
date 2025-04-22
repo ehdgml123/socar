@@ -1,7 +1,7 @@
 const Test = () => {
   const authTestHandler = async () => {
     try {
-        const token = localStorage.getItem('token');
+        const token = sessionStorage.getItem('token');
         const res = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/auth/test`, {
             method: "GET",
             headers: {

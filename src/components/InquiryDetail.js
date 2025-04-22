@@ -36,7 +36,7 @@ const InquiryDetail = () => {
    if(!confirmed) return;
 
    try{
-    const token = localStorage.getItem("token");
+    const token = sessionStorage.getItem("token");
     const res = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/inquiry/${id}`,
      {
         method : "DELETE",

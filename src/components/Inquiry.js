@@ -10,7 +10,7 @@ const Inquiry = () => {
   const [inquiries, setInquiries] = useState([]);
 
   useEffect(() => {
-    const token = localStorage.getItem("token");
+    const token = sessionStorage.getItem("token");
     setIsLogin(!!token);
 
 

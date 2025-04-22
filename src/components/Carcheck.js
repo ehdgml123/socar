@@ -52,12 +52,13 @@ const Carcheck = () => {
                 이미지 업로드
               </div>
             </div>
-            <div className="filevid">
+            
+            {/* <div className="filevid">
               <div className="button5" onClick={() => setShowVidModal(true)}>
                 <span className="material-symbols-outlined">smart_display</span>
                 영상 업로드
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="resultboxs">

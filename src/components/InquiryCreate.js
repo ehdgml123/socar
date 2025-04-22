@@ -44,7 +44,7 @@ const InquiryCreate = () => {
   
     const { title, phone, wr_content } = formData;
 
-   const token = localStorage.getItem('token');
+   const token = sessionStorage.getItem('token');
 
     if (!title || !phone || !wr_content) {
       alert("모든 항목을 입력해주세요");

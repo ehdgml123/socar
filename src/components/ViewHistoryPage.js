@@ -21,7 +21,7 @@ const ViewHistoryPage = () => {
   useEffect(() => {
     const fetchHistory = async () => {
       try {
-        const token = localStorage.getItem("token");
+        const token = sessionStorage.getItem("token");
         const response = await fetch(
           `${process.env.REACT_APP_SERVER_URL}/api/upload/history`,
           {
@@ -49,7 +49,7 @@ const ViewHistoryPage = () => {
   
   const openModel = async (detectionSetId) => {
     try {
-      const token = localStorage.getItem("token");
+      const token = sessionStorage.getItem("token");
       const response = await fetch(
         `${process.env.REACT_APP_SERVER_URL}/api/upload/history/${detectionSetId}`,
         {

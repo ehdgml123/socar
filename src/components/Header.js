@@ -6,7 +6,7 @@ const Header = () => {
 
   const handleLogout = async () => {
     try {
-      const token = localStorage.getItem("token");
+      const token = sessionStorage.getItem("token");
       const res = await fetch(
         `${process.env.REACT_APP_SERVER_URL}/api/auth/logout`,
         {
@@ -19,7 +19,7 @@ const Header = () => {
 
       if (res.ok) {
         // 로컬 스토리지에서 토큰 삭제
-        localStorage.removeItem("token");
+        sessionStorage.removeItem("token");
         alert("로그아웃 성공!");
         navigate("/login");
       } else {
@@ -41,7 +41,7 @@ const Header = () => {
           </div>
 
           <ul className="navbar__menu">
-            {!localStorage.getItem("token") ? (
+            {!sessionStorage.getItem("token") ? (
               <>
                 <li>
                   <Link to="/Login">로그인</Link>
@@ -51,9 +51,14 @@ const Header = () => {
                 </li>
               </>
             ) : (
+              <>
               <li style={{ cursor: "pointer" }} onClick={handleLogout}>
                 로그아웃
               </li>
+              <li>
+                <Link to="/mypage">마이페이지</Link>
+              </li>
+              </>
             )}
             <li>
               <Link to="/Inquiry">문의하기</Link>

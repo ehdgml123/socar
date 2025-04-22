@@ -25,6 +25,8 @@ const InquiryDetail = lazy(() => import("../components/InquiryDetail"))
 
 const ViewHistoryPage = lazy(() => import("../components/ViewHistoryPage"))
 
+const MyPage = lazy(() => import("../components/MyPage"))
+
 const root = createBrowserRouter([
   {
     path: "",
@@ -68,6 +70,10 @@ const root = createBrowserRouter([
   },{
     path : "/viewhistory",
     element : <Suspense fallback={Loading}><ViewHistoryPage /></Suspense>
+  },
+  {
+    path: "/mypage",
+    element : <Suspense fallback={Loading}><MyPage/></Suspense>
   }
 ]);
 

@@ -46,7 +46,7 @@ const Login = () => {
         console.log("Access Token:", data.access_token);
         console.log("Token Type:", data.token_type);
         
-        localStorage.setItem('token', data.access_token);
+        sessionStorage.setItem('token', data.access_token);
         alert("로그인 성공!");
         navigate("/SubMainpage");
       }else{

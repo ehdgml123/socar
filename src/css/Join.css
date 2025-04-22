@@ -103,6 +103,7 @@ a {
 .btn {
   padding: 0 40px;
   margin-top: 40px;
+  width: 100%;
 }
 
 .btn button {
