@@ -4,7 +4,7 @@
 
   - [개요](https://github.com/ehdgml123/socar#-개요)
 
-  - [팀원 소개](https://github.com/ehdgml123/socar#-팀원 소개)
+  - [팀원 소개](https://github.com/ehdgml123/socar#-팀원소개)
   
   - [기술 스택](https://github.com/ehdgml123/socar#-기술-스택)
     
