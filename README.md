@@ -16,7 +16,7 @@
     
   - [개선사항](https://github.com/ehdgml123/socar#-개선사항)
 
-## *:page_with_curl: 개요
+## :page_with_curl: 개요
 - 프로젝트 목표 : Roboflow 를 활용하여 차량 파손감지 하는 프로젝트  
 - 개발 기간 : 25/03/31 ~ 25/04/25
 
