@@ -6,7 +6,7 @@
 
   - [팀원 소개](https://github.com/ehdgml123/socar#-팀원소개)
   
-  - [기술 스택](https://github.com/ehdgml123/socar#-기술-스택)
+  - [기술 스택](https://github.com/ehdgml123/socar#-기술스택)
     
   - [프로젝트 설계](https://github.com/ehdgml123/socar#-프로젝트-설계)
     
@@ -24,4 +24,9 @@
 - LEE DON GHEE <a href="https://github.com/ehdgml123"><img src="https://img.shields.io/badge/GitHub-181717?style=plastic&logo=GitHub&logoColor=white"></a>
 - Nae Ho Seung <a href="https://github.com/Naessss"><img src="https://img.shields.io/badge/GitHub-181717?style=plastic&logo=GitHub&logoColor=white"></a>
 
- #### :pencil:SKILL
+ #### :pencil:기술스택
+- Frontend : `JS`, `CSS`, `React.js`, `Bootstrap`,`react-router-dom`, `react-dom`
+- Backend : `FastAPI`
+- AI Model : `MySQL`
+- IDE : `Visual Studio Code (VSCode)`
+- Source Code Management : `Git`
