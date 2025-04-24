@@ -59,6 +59,7 @@
 
  ![Image](https://github.com/user-attachments/assets/9a542eb0-de90-4633-a877-1a2c9e3eeff6)
 
+
  * **파손조회 내역 및 상세보기**
  - 사용자가 조회한 내역 을 볼 수 있으며, 상세보기를 하면 파손된 부위 감지된 이미지를 볼 수가 있다.
 
