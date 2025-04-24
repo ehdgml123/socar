@@ -58,5 +58,7 @@
  - 사용자가 차량 외부를 촬영한 이미지를 업로드하면, 시스템이 파손된 부위를 자동으로 감지하여 시각적으로 표시해주는 기능을 제공한다.
 
 ## :bulb: 주요기능 실행화면
+
+![Image](https://github.com/user-attachments/assets/9a542eb0-de90-4633-a877-1a2c9e3eeff6)
    
  
