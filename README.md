@@ -8,9 +8,7 @@
   
   - [기술 스택](https://github.com/ehdgml123/socar#-기술스택)
     
-  - [프로젝트 설계](https://github.com/ehdgml123/socar#-프로젝트-설계)
-    
-  - [핵심 기능](https://github.com/ehdgml123/socar#-핵심-기능)
+  - [프로젝트 설계](https://github.com/ehdgml123/socar#-프로젝트)
     
   - [주요기능 실행화면](https://github.com/ehdgml123/socar#-주요기능-실행화면)
     
